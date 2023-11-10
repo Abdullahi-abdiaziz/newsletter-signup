@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="img-section">
+          <picture class="hero-img">
+            <source media="(min-width: 769px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+            <source media="(max-width: 37.5em)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="alt text here" />
+          </picture>
+      </section>
+      <section class="form-section">
+        <div class="text-content">
+          <h1 class="title">Stay updated!</h1>
+          <p class="text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        </div>
+        <div class="services">
+          <div class="service">
+            <img src="./assets/images/icon-success.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="service">
+            <img src="./assets/images/icon-success.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="service">
+            <img src="./assets/images/icon-success.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div class="form-div">
+          <form>
+            <label for="email-input">Email address</label>
+            <span id="result"></span>
+            <input type="email" id="email" placeholder="email@company.com " />
+            <button class="btn submit" id="submit-btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="success">
+      <img src="./assets/images/icon-success.svg" alt="" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to
+        <b>ash@loremcompany.com.</b> Please open it and click the button inside
+        to confirm your subscription.
+      </p>
+      <button class="btn dismiss" id="dismiss">Dismiss message</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
