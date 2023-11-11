@@ -220,18 +220,18 @@ input {
   }
  .container {
     flex-direction: row-reverse;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
     height: auto;
-    max-width: 770px;
+    max-width: 997px;
     border-radius: 1rem;
     background-color: var(--White);
     margin: 0 auto;
   } 
 
  .form-section .title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
   }
 
   .success {
