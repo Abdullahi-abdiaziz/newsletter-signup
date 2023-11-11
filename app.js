@@ -1,18 +1,17 @@
-const submitBtn = document.getElementById('submit-btn');
-const main = document.querySelector('.container');
-const feedback = document.querySelector('.success');
-const input = document.querySelector('input');
-const dismiss = document.getElementById('dismiss');
+const submitBtn = document.getElementById("submit-btn");
+const main = document.querySelector(".container");
+const feedback = document.querySelector(".success");
+const input = document.querySelector("input");
+const dismiss = document.getElementById("dismiss");
 
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault()
-  validate();  
-})
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  validate();
+});
 
-
-dismiss.addEventListener('click', () => {
+dismiss.addEventListener("click", () => {
   window.location.reload();
-})
+});
 
 const validateEmail = (email) => {
   return email.match(
@@ -29,9 +28,9 @@ const validate = () => {
     main.classList.add("hide");
     feedback.style.display = "block";
   } else {
-    result.innerText ='Valid email required';
-    result.style.color = 'red';
-    input.classList.add('error-state');
+    result.innerText = "Valid email required";
+    result.style.color = "red";
+    input.classList.add("error-state");
   }
   return false;
 };
